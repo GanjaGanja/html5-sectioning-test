@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<title>HTML5 Sectioning Elements Test</title>
+</head>
+<body>
+	<header>
+		<div id="logo">Rocking Stone</div>
+		<nav>
+			<ul>
+				<li><a href="#">Новости</a></li>
+				<li><a href="#">Обзоры альбомов</a></li>
+				<li><a href="#">Один день из жизни</a></li>
+			</ul>
+		</nav>
+	</header>
+
+
+
+	<!-- В теге <main> уникальное содержание страницы. Он такой один. -->
+	<main role="main">
+		<h1>Электрогитары</h1>
+		<p>Величайшие гитары всех времён</p>
+
+		<article>
+			<header>
+				<h2>Gibson SG</h2>
+				<p>Опубликовано 29 мая</p>
+			</header>
+			<p>
+				 Gibson SG — электрогитара, созданная компанией Gibson на основе гитары Gibson Les Paul в 1961 году.
+			</p>
+			<section>
+				<h2>История</h2>
+				<p>В 1958 году продажи гитары Gibson Les Paul были значительно ниже, чем в предыдущие годы. В следующем году компания Gibson ...</p>
+			</section>
+			<!-- Тег <aside> для материалов связанных со статьёй, -->
+			<!--  но которые можно разместить отдельно. -->
+			<aside>
+				<h3>Gibson</h3>
+				<p>Gibson (Гибсон) — американская компания, производитель гитар.</p>
+			</aside>
+			<section>
+				<h3>Комментарии</h3>
+				<article>
+					<footer>
+						<p>Комментарий от: Василий Пупкин</p>
+					</footer>
+					<p>Прекрасная статья</p>
+				</article>
+				<article>
+					<footer>
+						<p>Комментарий от: Гнедой Конь</p>
+					</footer>
+					<p>Первый нах!</p>
+				</article>
+			</section>
+		</article>
+
+		<article> <!-- тут ещё статья -->
+			<header>
+				<h2>Fender Telecaster</h2>
+				<p>Опубликовано 20 мая</p>
+			</header>
+			<p>Текст.</p>
+		</article>		
+	</main>
+
+
+
+	<footer>
+		<address>
+			Email: <a href="mailto:email@mail.com">email@mail.com</a>
+		</address>
+		<p>Все права защищены &copy;</p>
+	</footer>
+</body>
+</html>
